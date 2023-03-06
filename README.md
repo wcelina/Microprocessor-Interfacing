@@ -1,5 +1,5 @@
 ### Microprocessor Interfacing and Embedded Systems
-#### ECE 372 - Portland State University
+#### ECE 372 Winter 2023 - Portland State University
 ##  
 #### Hardware 
     - BeagleBone Black
