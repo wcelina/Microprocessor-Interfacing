@@ -117,7 +117,7 @@ Entry:
 @
 
 Enter_BootLoader:
-         LDR   r10,= main              @ Get the address of _start
+         LDR   r10, = main              @ Get the address of _start
          MOV   lr,pc                     @ Dummy return 
          BX    r10                       @ Branch to main 
          SUB   pc, pc, #0x08             @ looping   
@@ -162,7 +162,7 @@ __isr_vector:
         LDR   pc, [pc,#-8]       @ 0x0C Prefetch Abort
         LDR   pc, [pc,#-8]       @ 0x10 Data Abort
         LDR   pc, [pc,#-8]       @ 0x14 Not used
-        LDR   pc, =int_handler       @ 0x18 IRQ interrupt
+        LDR   pc, =INT_DIRECTOR       @ 0x18 IRQ interrupt
         LDR   pc, [pc,#-8]       @ 0x1C FIQ interrupt
         .long  Entry
         .long  0
