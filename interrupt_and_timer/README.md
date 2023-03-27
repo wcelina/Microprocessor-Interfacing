@@ -1,0 +1,6 @@
+### Design Project 1
+#### This project increments and decrements the individual light-up of the USER LEDs on the BeagleBone Black board continuously, with a set delay between each light-up using the built-in Sitara Timer. A push-button will be used as an interrupt on GPIO1_3 (pin 6) to turn off and pause all the LEDs, and to play/resume the lightshow exactly from where it was previously. Flags will be stored in and read from memory and used to determine if we are playing or pausing the lightshow, and to determine which LED is supposed to light up next (and whether we are incrementing or decrementing the LEDs) after resuming the lightshow.
+
+#### The main purpose of this project is to create a program that sits idle until an interrupt is sensed (timer or button) and to see how we can store and retrieve data from registers to use in the mainline and in the interrupt procedure. 
+
+#### In a bigger picture, we want the processor to stay idle and only perform certain tasks when needed instead of continuously doing something that doesn't need to be ran endlessly. This creates for better efficiency and utilization of a processor, and allows us to prioritize tasks that may have a higher precedence. 
