@@ -17,5 +17,6 @@ Part 2: Controlling a stepper motor by sending signals to PCA9685 from BBB board
 #### Hardware 
     - BeagleBone Black
     - PCA9685 (project 2)
+    - 12V DC Hybrid Bipolar Stepper Motor
 #### Software 
     - Code Composer Studio v8.3.1
